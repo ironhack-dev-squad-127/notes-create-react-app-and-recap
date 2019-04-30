@@ -1,23 +1,14 @@
 import React from 'react';
 import './App.css';
+import Square from './Square';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="/logo.svg" className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Tuesday Test</h1>
+      {/* Render Square and give a `this.props.size`, `this.props.border` and `this.props.color` */}
+      <Square size={100} border="3" color="red" />
+      <Square size={30} border="0" color="black" />
     </div>
   );
 }
